@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-image: url(./images/image-hero.jpg);
+  background-repeat: no-repeat;
+}
+
+.margin {
+  padding: 0 120px;
+}
+header {
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  position: relative;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 0;
+  background: white;
+  display: block;
+  transition: 0.2s;
+}
+
+ul li a:hover::after {
+  width: 30px;
+}
+.banner-txt {
+  margin: 100px 0px;
+}
+
+.banner-txt h1 {
+  font-family: "Montserrat", sans-serif;
+  width: 500px;
+  height: 250px;
+  padding: 25px;
+  border: 3px solid white;
+  color: white;
+  font-size: 50px;
+}
+
+.banner-purple {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.banner-purple .vr-txt {
+  background-color: white;
+  position: absolute;
+  width: 550px;
+  padding: 80px;
+  top: 40%;
+  left: 50%;
+}
+
+.banner-purple .vr-txt h2 {
+  font-size: 40px;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner-creation {
+  padding: 50px 0px;
+}
+
+.banner-creation .ttl-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-creation .ttl-btn h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+.banner-creation .ttl-btn button {
+  padding: 0px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner-creation .ttl-btn button:hover {
+  background-color: black;
+  color: white;
+}
+
+.banner-creation .grid-img {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner-creation .grid-img .gal-img {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.banner-creation .grid-img .gal-img h3 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  top: 70%;
+  left: 10%;
+  color: white;
+  transition: 0.4s;
+}
+
+.banner-creation .grid-img .gal-img img {
+  transition: 0.3s;
+}
+
+.banner-creation .grid-img .gal-img:hover img {
+  opacity: 30%;
+}
+
+.banner-creation .grid-img .gal-img:hover h3 {
+  color: rgb(32, 32, 32);
+}
+
+footer {
+  padding: 40px 120px;
+  background-color: black;
+}
+
+footer .logo-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .social-icons {
+    display: flex;
+}
+footer .social-icons li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+}
+
+
+footer .social-icons li a::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 0;
+    background: white;
+    display: block;
+    transition: 0.2s;
+}
+footer .social-icons li a:hover::after{
+    width: 30px;
+}
+
+footer .footer-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+footer .footer-line .copyright-txt {
+  color: rgb(105, 104, 104);
+}
