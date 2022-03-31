@@ -1,21 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-body {
-  background-image: url(./images/image-hero.jpg);
-  background-repeat: no-repeat;
+  font-family: "Alata", sans-serif;
 }
 
 .margin {
+  background-image: url(./images/image-hero.jpg);
+  background-repeat: no-repeat;
   padding: 0 120px;
 }
-header {
+.home-design {
   height: 100vh;
 }
 .header {
@@ -40,9 +45,9 @@ ul li {
 }
 
 ul li a {
-  color: white;
+  color: var(--White);
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 400;
   position: relative;
 }
 
@@ -53,7 +58,7 @@ ul li a::after {
   height: 2px;
   left: 22%;
   bottom: -10px;
-  background: white;
+  background: var(--White);
   display: block;
   transform: scale(0, 1);
   transition: transform 0.2s ease;
@@ -68,13 +73,14 @@ ul li a:hover::after {
 }
 
 .banner-txt h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
   width: 500px;
   height: 250px;
   padding: 25px;
-  border: 3px solid white;
-  color: white;
-  font-size: 50px;
+  border: 3px solid var(--White);
+  color: var(--White);
+  font-size: 60px;
 }
 
 .banner-purple {
@@ -83,7 +89,7 @@ ul li a:hover::after {
 }
 
 .banner-purple .vr-txt {
-  background-color: white;
+  background-color: var(--White);
   position: absolute;
   width: 550px;
   padding: 80px;
@@ -92,9 +98,15 @@ ul li a:hover::after {
 }
 
 .banner-purple .vr-txt h2 {
-  font-size: 40px;
+  font-size: 45px;
   margin: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.banner-purple .vr-txt p {
+  color: var(--Very-Dark-Gray);
+  font-size: 15px;
 }
 
 .banner-creation {
@@ -107,24 +119,26 @@ ul li a:hover::after {
 }
 
 .banner-creation .ttl-btn h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
 }
 
 .banner-creation .ttl-btn button {
   padding: 0px 40px;
-  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
-  color: black;
+  font-size: 15px;
+  color: var(--Black);
   background: none;
-  border: 1px solid black;
+  border: 2px solid var(--Dark-Gray);
   cursor: pointer;
   transition: 0.3s;
 }
 
 .banner-creation .ttl-btn button:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--Black);
+  color: var(--White);
 }
 
 .banner-creation .grid-img {
@@ -143,11 +157,12 @@ ul li a:hover::after {
 
 .banner-creation .grid-img .gal-img h3 {
   position: absolute;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 35px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
   top: 70%;
   left: 10%;
-  color: white;
+  color: var(--White);
   transition: 0.4s;
 }
 
@@ -160,12 +175,12 @@ ul li a:hover::after {
 }
 
 .banner-creation .grid-img .gal-img:hover h3 {
-  color: rgb(32, 32, 32);
+  color: var(--Black);
 }
 
 footer {
   padding: 40px 120px;
-  background-color: black;
+  background-color: var(--Black);
 }
 
 footer .logo-icons {
@@ -177,7 +192,7 @@ footer .social-icons {
   display: flex;
 }
 footer .social-icons li a {
-  color: white;
+  color: var(--White);
   text-decoration: none;
   font-weight: 900;
   position: relative;
@@ -190,7 +205,7 @@ footer .social-icons li a::after {
   height: 2px;
   left: -10%;
   bottom: -10px;
-  background: white;
+  background: var(--White);
   display: block;
   transform: scale(0, 1);
   transition: transform 0.2s ease;
@@ -207,5 +222,5 @@ footer .footer-line {
 }
 
 footer .footer-line .copyright-txt {
-  color: rgb(105, 104, 104);
+  color: var(--Dark-Gray);
 }
